@@ -1,0 +1,49 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #2135a6;
+    color: #fff;
+
+    h1 {
+        margin-bottom: 3rem;
+    }
+}
+
+.home-ilustration {
+    max-width: 25rem;
+    height: auto;
+    margin-bottom: 2.5rem;
+}
+
+.logoAndSignUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+        max-width: 11rem;
+        height: auto;
+        margin-right: 2rem;
+    }
+
+    a {
+        display: inline-block;
+        background-color: #f67841;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        max-width: 25rem;
+    }
+}
+
+.logoAndSignUp a:hover {
+    background-color: #f3541c;
+}

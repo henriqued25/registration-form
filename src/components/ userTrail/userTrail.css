@@ -1,0 +1,37 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+.user-trail-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.25rem;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: bold;
+    }
+}
+
+#accept-terms {
+    color: #57534e;
+    margin: 40px 0px;
+    font-weight: normal;
+
+    strong {
+        color: #f67841;
+    }
+
+    input {
+        margin-right: 10px;
+        transform: scale(1.5);
+        border: 1.5px solid #d6d3d1;
+    }
+}

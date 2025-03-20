@@ -1,0 +1,81 @@
+.registration-form {
+    max-width: 43rem;
+    height: auto;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+
+    a {
+        display: flex;
+        color: #8f8881;
+        text-decoration: none;
+        gap: 3px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    p {
+        text-align: center;
+        color: #57534e;
+    }
+}
+
+.registration-form a:hover {
+    filter: grayscale(100%) sepia(50%) hue-rotate(180deg);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-right: 8%;
+
+    button[type="button"] {
+        width: 123px;
+        height: 48px;
+        min-width: 120px;
+        border-radius: 8px;
+        border: 2px solid #f67841;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    button[type="button"]:hover {
+        background-color: #fff;
+        color: black;
+        box-shadow: 0 2px 4px #d6d3d1;
+        transition: box-shadow 0.3s ease;
+    }
+
+    button[type="submit"] {
+        width: 169px;
+        height: 48px;
+        min-width: 120px;
+        border-radius: 8px;
+        border: none;
+        background-color: #f67841;
+        color: #fff;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    button[type="submit"]:disabled:hover {
+        background-color: #b9b9b9;
+        cursor: not-allowed;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #f3541c;
+    }
+}

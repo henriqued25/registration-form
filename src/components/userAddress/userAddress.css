@@ -1,0 +1,112 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+.user-address-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    clear: both;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.25rem;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #8f8881;
+        background-color: #fff;
+        outline: none;
+        transition: border-color 0.3s ease;
+        transition: box-shadow 0.3s ease;
+    }
+}
+
+.user-address-form input:focus {
+    border: 2px solid #f3541c;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-address-form button:hover {
+    background-color: #f3541c;
+}
+
+.user-address-section {
+    display: grid;
+    grid-template-rows: 1 1;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+
+    input {
+        background-color: #e7e5e4;
+        border: 1px solid #e7e5e4;
+    }
+}
+
+#houseNumber {
+    background-color: #fff;
+}
+
+.upload-proof-Document {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    height: 9rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    border: 2px dashed #ddd;
+
+    img {
+        width: 2.5rem;
+        height: auto;
+    }
+}
+
+.file-selected {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f0f8ff;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+
+    button {
+        background-color: #f0f8ff;
+        color: black;
+        font-size: 16px;
+        cursor: pointer;
+        width: 50px;
+        height: auto;
+    }
+
+    button:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f2ed";
+    }
+
+    button:hover {
+        color: #d32f2f;
+        background-color: #f0f8ff;
+        transform: scale(1.05);
+    }
+}

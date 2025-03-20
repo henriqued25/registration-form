@@ -1,0 +1,53 @@
+.trail-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.trail-container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.trail-container input[type="radio"] {
+    appearance: none;
+    margin-bottom: 10px;
+    margin-right: 230px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.trail-container input[type="radio"]:checked {
+    background-color: #f3541c;
+    border-color: #f3541c;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.trail-container li:hover {
+    border: 2px solid #f3541c;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.trail-container label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.trail-container img {
+    width: 30px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 5px;
+}

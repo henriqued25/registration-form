@@ -1,0 +1,43 @@
+.completed-form-page {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.completed-form-container {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 37rem;
+
+    h1 {
+        color: #28a745;
+        margin-bottom: 1.25rem;
+    }
+
+    p {
+        color: #57534e;
+        margin-bottom: 1.5rem;
+    }
+
+    a {
+        display: inline-block;
+        background-color: #f67841;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.completed-form-container a:hover {
+    background-color: #f3541c;
+}
