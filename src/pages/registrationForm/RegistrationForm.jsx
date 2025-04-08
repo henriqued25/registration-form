@@ -482,9 +482,9 @@ export const RegistrationForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-        console.log(
-            "Dados do formulário: Informações de Usuário",
-            {
+        localStorage.setItem(
+            "locaUserInformation",
+            JSON.stringify({
                 userName,
                 dateOfBirth,
                 cpf,
@@ -492,22 +492,47 @@ export const RegistrationForm = () => {
                 email,
                 phone,
                 identityDocument,
-            },
+            })
+        );
 
-            "Dados do formulário: Endenreço de Usuário",
-            {
+        localStorage.setItem(
+            "localUserAddress",
+            JSON.stringify({
                 zipCode,
                 street,
                 houseNumber,
                 city,
                 state,
                 proofOfResidency,
-            },
+            })
+        );
+
+        localStorage.setItem(
+            "localUserTrail",
+            JSON.stringify({
+                selectedOption,
+            })
+        );
+
+        const storedUserInfo = JSON.parse(
+            localStorage.getItem("localUserInformation")
+        );
+        const storedUserAddress = JSON.parse(
+            localStorage.getItem("localUserAddress")
+        );
+        const storedUserTrail = JSON.parse(
+            localStorage.getItem("localUserTrail")
+        );
+
+        console.log(
+            "Dados do formulário: Informações de Usuário",
+            storedUserInfo,
+
+            "Dados do formulário: Endereço de Usuário",
+            storedUserAddress,
 
             "Dados do formulário: Trilha do Usuário",
-            {
-                selectedOption,
-            }
+            storedUserTrail
         );
     };
 
