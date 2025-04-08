@@ -11,6 +11,7 @@ import { toast } from "react-toastify";
 export const RegistrationForm = () => {
     // user information data:
     const [userName, setUserName] = useState("");
+    const [userPassword, setUserPassword] = useState("");
     const [dateOfBirth, setDateOfBirt] = useState("");
     const [cpf, setCpf] = useState("");
     const [gender, setGender] = useState("");
@@ -39,6 +40,7 @@ export const RegistrationForm = () => {
 
     const [errors, setErrors] = useState({
         userName: "",
+        userPassword: "",
         dateOfBirth: "",
         cpf: "",
         gender: "",
@@ -71,6 +73,28 @@ export const RegistrationForm = () => {
             setErrors((prevErrors) => ({
                 ...prevErrors,
                 userName: "",
+            }));
+            return true;
+        }
+    };
+
+    const validateUserPassword = () => {
+        if (!userPassword) {
+            setErrors((prevErrors) => ({
+                ...prevErrors,
+                userPassword: "Crie uma senha para prosseguir.",
+            }));
+            return false;
+        } else if (userPassword.length < 8) {
+            setErrors((prevErrors) => ({
+                ...prevErrors,
+                userPassword: "Sua senha deve ter pelo menos 8 caracteres.",
+            }));
+            return false;
+        } else {
+            setErrors((prevErrors) => ({
+                ...prevErrors,
+                userPassword: "",
             }));
             return true;
         }
@@ -338,6 +362,7 @@ export const RegistrationForm = () => {
         switch (currentStage) {
             case 1: // UserInformation
                 const nameValid = validateName();
+                const passwordValid = validateUserPassword();
                 const dateOfBirthValid = validateDateOfBirth();
                 const cpfValid = validateCpf();
                 const genderValid = validateGender();
@@ -347,6 +372,7 @@ export const RegistrationForm = () => {
 
                 if (
                     nameValid &&
+                    passwordValid &&
                     dateOfBirthValid &&
                     cpfValid &&
                     genderValid &&
@@ -403,6 +429,7 @@ export const RegistrationForm = () => {
                 return (
                     <UserInformation
                         userName={userName}
+                        userPassword={userPassword}
                         dateOfBirth={dateOfBirth}
                         cpf={cpf}
                         gender={gender}
@@ -410,6 +437,7 @@ export const RegistrationForm = () => {
                         phone={phone}
                         identityDocument={identityDocument}
                         setUserName={setUserName}
+                        setUserPassword={setUserPassword}
                         setDateOfBirth={setDateOfBirt}
                         setCpf={setCpf}
                         setGender={setGender}

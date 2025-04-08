@@ -3,6 +3,7 @@ import "./userInformation.css";
 export const UserInformation = (dataUserInformation) => {
     const {
         userName,
+        userPassword,
         dateOfBirth,
         cpf,
         gender,
@@ -10,6 +11,7 @@ export const UserInformation = (dataUserInformation) => {
         phone,
         identityDocument,
         setUserName,
+        setUserPassword,
         setDateOfBirth,
         setCpf,
         setGender,
@@ -52,6 +54,19 @@ export const UserInformation = (dataUserInformation) => {
                 />
                 {errors.userName && (
                     <p className="error-message">{errors.userName}</p>
+                )}
+
+                <label htmlFor="userPassword">Senha</label>
+                <input
+                    type="text"
+                    placeholder="Crie uma Senha"
+                    name="userPassword"
+                    id="userPassword"
+                    value={userPassword}
+                    onChange={(e) => setUserPassword(e.target.value)}
+                />
+                {errors.userPassword && (
+                    <p className="error-message">{errors.userPassword}</p>
                 )}
 
                 <label htmlFor="dateOfBirth">Data de nascimento</label>
