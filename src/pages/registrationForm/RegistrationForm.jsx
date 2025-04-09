@@ -575,8 +575,7 @@ export const RegistrationForm = () => {
             </Link>
             <h1>Formulário de Inscrição</h1>
             <p>
-                Preencha os dados abaixo para fazer sua inscrição no Programa
-                Trilhas.
+                Preencha os dados abaixo para fazer sua inscrição.
             </p>
             <form onSubmit={handleSubmit}>
                 <AnimatePresence mode="wait">
