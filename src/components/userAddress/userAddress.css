@@ -132,13 +132,14 @@
 
     .user-address-form label {
         display: block;
+        max-width: 100%;
         margin-bottom: 3px;
         color: #333;
         font-size: 0.9rem;
     }
 
     .user-address-form input {
-        width: 400px;
+        max-width: 100%;
         padding: 0.75rem;
         margin-bottom: 1rem;
         border: 1px solid #ccc;
