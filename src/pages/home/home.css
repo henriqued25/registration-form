@@ -19,17 +19,12 @@
     margin-bottom: 2.5rem;
 }
 
-.logoAndSignUp {
+.loginAndSignUp {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    img {
-        max-width: 11rem;
-        height: auto;
-        margin-right: 2rem;
-    }
+    gap: 15px;
 
     a {
         display: inline-block;
@@ -44,6 +39,6 @@
     }
 }
 
-.logoAndSignUp a:hover {
+.loginAndSignUp a:hover {
     background-color: #f3541c;
 }

@@ -486,6 +486,7 @@ export const RegistrationForm = () => {
             "locaUserInformation",
             JSON.stringify({
                 userName,
+                userPassword,
                 dateOfBirth,
                 cpf,
                 gender,
