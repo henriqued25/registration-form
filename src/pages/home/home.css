@@ -42,3 +42,54 @@
 .loginAndSignUp a:hover {
     background-color: #f3541c;
 }
+
+@media (max-width: 575px) {
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+        background-color: #2135a6;
+    }
+
+    .home-page h1 {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    .home-ilustration {
+        max-width: 70%;
+        margin-bottom: 3rem;
+    }
+
+    .loginAndSignUp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .loginAndSignUp a {
+        display: block;
+        background-color: #f67841;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        max-width: 100%;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .loginAndSignUp a:hover {
+        background-color: #f3541c;
+    }
+}

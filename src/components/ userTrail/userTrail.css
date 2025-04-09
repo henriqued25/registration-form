@@ -35,3 +35,49 @@
         border: 1.5px solid #d6d3d1;
     }
 }
+
+@media (max-width: 575px) {
+    .user-trail-form {
+        max-width: 100%;
+        margin: 1rem auto;
+        padding: 1rem;
+        background-color: #fff;
+    }
+
+    .user-trail-form h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #333;
+        font-size: 1.3rem;
+    }
+
+    .user-trail-form label {
+        display: block;
+        margin-bottom: 3px;
+        color: #333;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+
+    #accept-terms {
+        color: #57534e;
+        margin: 2rem 0;
+        font-weight: normal;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-wrap: wrap; 
+        gap: 0.5rem; 
+    }
+
+    #accept-terms strong {
+        color: #f67841;
+    }
+
+    #accept-terms input {
+        margin-right: 0.5rem;
+        transform: scale(1.2);
+        border: 1.5px solid #d6d3d1;
+    }
+}

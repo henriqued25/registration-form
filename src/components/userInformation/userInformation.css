@@ -112,3 +112,123 @@
         transform: scale(1.05);
     }
 }
+
+@media (max-width: 575px) {
+    .user-information-form {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem auto;
+        padding: 1rem;
+        background-color: #fff;
+    }
+
+    .user-information-form h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #333;
+        font-size: 1.3rem;
+    }
+
+    .user-information-form label {
+        display: block;
+        margin-bottom: 3px;
+        color: #333;
+        font-size: 0.9rem;
+    }
+
+    .user-information-form input {
+        width: 400px;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #8f8881;
+        background-color: #fff;
+        outline: none;
+        transition: border-color 0.3s ease;
+        transition: box-shadow 0.3s ease;
+        font-size: 0.9rem;
+    }
+
+    .user-information-form select {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #8f8881;
+        background-color: #fff;
+        outline: none;
+        transition: border-color 0.3s ease;
+        transition: box-shadow 0.3s ease;
+        appearance: none;
+        background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+        background-repeat: no-repeat;
+        background-position: right 0.5rem top 50%;
+        background-size: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .user-information-form select:focus,
+    .user-information-form input:focus {
+        border: 2px solid #f3541c;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .user-information-form button:hover {
+        background-color: #f3541c;
+    }
+
+    .upload-identity-Document {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.75rem;
+        height: 7rem;
+        margin-bottom: 0.75rem;
+        margin-top: 0.25rem;
+        align-items: center;
+        cursor: pointer;
+        border: 2px dashed #ddd;
+    }
+
+    .upload-identity-Document img {
+        width: 2rem;
+        height: auto;
+    }
+
+    .file-selected {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #f0f8ff;
+        border: 1px solid #ccc;
+        padding: 0.25rem 0.5rem;
+        margin-bottom: 1rem;
+        border-radius: 4px;
+        font-size: 0.8rem;
+    }
+
+    .file-selected button {
+        background-color: #f0f8ff;
+        color: black;
+        font-size: 1rem;
+        cursor: pointer;
+        width: auto;
+        height: auto;
+        border: none;
+    }
+
+    .file-selected button:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f2ed";
+    }
+
+    .file-selected button:hover {
+        color: #d32f2f;
+        background-color: #f0f8ff;
+        transform: scale(1.05);
+    }
+}

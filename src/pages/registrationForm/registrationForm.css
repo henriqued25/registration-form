@@ -2,7 +2,6 @@
     max-width: 43rem;
     height: auto;
     margin: 1.25rem auto;
-    padding: 1.25rem;
     border: 1px solid #ddd;
     border-radius: 6px;
     background-color: #fff;
@@ -76,6 +75,98 @@
     }
 
     button[type="submit"]:hover {
+        background-color: #f3541c;
+    }
+}
+
+@media (max-width: 575px) {
+    .registration-form {
+        max-width: 100vw;
+        height: auto;
+        margin: 1rem auto;
+        padding: 1rem 0;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        background-color: #fff;
+    }
+
+    .registration-form a {
+        display: flex;
+        color: #8f8881;
+        text-decoration: none;
+        gap: 3px;
+        font-size: 0.9rem;
+    }
+
+    .registration-form h1 {
+        text-align: center;
+        color: #333;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .registration-form p {
+        text-align: center;
+        color: #57534e;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .registration-form a:hover {
+        filter: grayscale(100%) sepia(50%) hue-rotate(180deg);
+    }
+
+    .form-actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 0.75rem;
+        margin-right: 0;
+        padding: 0 1rem;
+    }
+
+    .form-actions button[type="button"] {
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        border: 2px solid #f67841;
+        background-color: #fff;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+
+    .form-actions button[type="button"]:hover {
+        background-color: #fff;
+        color: black;
+        box-shadow: 0 2px 4px #d6d3d1;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .form-actions button[type="submit"] {
+        width: 100%;
+        height: 40px;
+        min-width: auto;
+        border-radius: 8px;
+        border: none;
+        background-color: #f67841;
+        color: #fff;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+
+    .form-actions button[type="submit"]:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+    .form-actions button[type="submit"]:disabled:hover {
+        background-color: #b9b9b9;
+        cursor: not-allowed;
+    }
+
+    .form-actions button[type="submit"]:hover {
         background-color: #f3541c;
     }
 }

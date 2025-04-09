@@ -66,3 +66,80 @@
 .login-form button:hover {
     background-color: #f3541c;
 }
+
+@media (max-width: 575px) {
+    .login-form {
+        max-width: 80%;
+        height: auto;
+        margin: 17rem auto;
+        padding: 1rem;
+        background-color: #fff;
+        border: 1px solid rgb(209, 205, 205);
+        border-radius: 10px;
+    }
+    
+    .login-form a {
+        display: flex;
+        color: #8f8881;
+        text-decoration: none;
+        gap: 3px;
+        font-size: 0.9rem;
+    }
+    
+    .login-form h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #333;
+        font-size: 1.5rem;
+    }
+    
+    .login-form label {
+        display: block;
+        margin-bottom: 3px;
+        color: #333;
+        font-size: 0.9rem;
+    }
+    
+    .login-form input {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: #8f8881;
+        background-color: #fff;
+        outline: none;
+        transition: border-color 0.3s ease;
+        transition: box-shadow 0.3s ease;
+        font-size: 0.9rem;
+    }
+    
+    .login-form button {
+        display: block;
+        border: none;
+        background-color: #f67841;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        max-width: 100%;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    
+    .login-form a:hover {
+        filter: grayscale(100%) sepia(50%) hue-rotate(180deg);
+    }
+    
+    .login-form input:focus {
+        border: 2px solid #f3541c;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .login-form button:hover {
+        background-color: #f3541c;
+    }
+}
