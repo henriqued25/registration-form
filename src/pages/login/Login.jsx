@@ -2,6 +2,7 @@ import "./login.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
+import { Link } from "react-router-dom";
 
 export const Login = () => {
     const [loginCpf, setLoginCpf] = useState("");
@@ -36,6 +37,10 @@ export const Login = () => {
 
     return (
         <div className="login-form">
+            <Link to="/">
+                <img src="/arrow-left.png" alt="arrow-left" />
+                Home
+            </Link>
             <h2>Login</h2>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="loginCpf">CPF:</label>

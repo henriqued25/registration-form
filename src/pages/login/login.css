@@ -6,7 +6,13 @@
     background-color: #fff;
     border: 1px solid rgb(209, 205, 205);
     border-radius: 10px;
-    
+
+    a {
+        display: flex;
+        color: #8f8881;
+        text-decoration: none;
+        gap: 3px;
+    }
 
     h2 {
         text-align: center;
@@ -46,6 +52,10 @@
         transition: background-color 0.3s ease;
         max-width: 25rem;
     }
+}
+
+.login-form a:hover {
+    filter: grayscale(100%) sepia(50%) hue-rotate(180deg);
 }
 
 .login-form input:focus {
