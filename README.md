@@ -74,9 +74,9 @@ Para executar este projeto localmente (para desenvolvedores):
     ```
 4.  Inicie a aplicação:
     ```bash
-    npm start
+    npm run dev
     # ou
-    yarn start
+    yarn run dev
     ```
 
     O formulário estará disponível em seu navegador em `http://localhost:3000`.
