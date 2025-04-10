@@ -1,6 +1,7 @@
 .registration-form {
     max-width: 43rem;
     height: auto;
+    padding: 1rem 1rem;
     margin: 1.25rem auto;
     border: 1px solid #ddd;
     border-radius: 6px;
